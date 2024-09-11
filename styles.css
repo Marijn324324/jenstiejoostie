@@ -1,0 +1,255 @@
+/* Algemene stijlen voor de inlogpagina */
+body {
+background-color: beige;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.login-container {
+    max-width: 400px;
+    width: 100%;
+    background: #9999999e;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: wheat 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.login-banner {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.login-container h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: #007BFF;
+    text-align: center;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #0000009e;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #ccc;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.footer-about, .footer-links, .footer-social {
+    flex: 1;
+    margin: 1rem;
+}
+
+.footer-about p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-links ul li a:hover {
+    color: white;
+}
+
+.footer-social a {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    color: #bbb;
+    text-decoration: whitesmoke;
+}
+
+.footer-social a:hover {
+    color: #ff6347; /* Same color as your buttons */
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-about, .footer-links, .footer-social {
+        margin: 1rem 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .login-container {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .login-container {
+        padding: 0.5rem;
+    }
+}
+/* Standaard stijl voor de zijbalk */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 35px;
+    text-decoration: none;
+    font-size: px;
+    color: #FFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #FF4081; /* Roze hover effect */
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Toggle knop voor menu */
+.menu-toggle {
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #FF4081; /* Roze kleur voor de toggle knop */
+}
+
+.menu-toggle:hover {
+    color: #FF80AB;
+}
+
+nav {
+    font-family: 'Georgia', sans-serif;
+    font-size: 40px;
+    color: #333;
+    background-color: #0165cf;
+    line-height: 1.6;
+    height: 100%;
+}
+#openNavBtn {
+    font-size: 24px; /* Vergroot de tekstgrootte */
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px; /* Breedte van het vakje */
+    height: 50px; /* Hoogte van het vakje */
+    text-align: center;
+    line-height: 50px; /* Zorgt ervoor dat de tekst gecentreerd is */
+    background-color: #444; /* Achtergrondkleur van het vakje */
+    color: white; /* Kleur van de tekst */
+    border-radius: 5px; /* Ronde hoeken voor het vakje */
+    border: 2px solid #fff; /* Randkleur en -dikte van het vakje */
+}

@@ -1,0 +1,314 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #ff6347; /* Tomato */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #ffa07a;
+    list-style-type: none;
+    padding: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ff4500;
+}
+
+/* Product View */
+.product-view {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-image {
+    display: none;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.product-details {
+    max-width: 500px;
+    padding: 1rem;
+}
+
+.product-details h2 {
+    color: #ff6347;
+    font-size: 2rem;
+}
+
+.product-details p {
+    margin: 1rem 0;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #ff4500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-view {
+        flex-direction: column;
+    }
+
+    .carousel-container, .product-details {
+        max-width: 100%;
+    }
+
+    .carousel-container {
+        margin-bottom: 1.5rem;
+    }
+}
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.footer-about, .footer-links, .footer-social {
+    flex: 1;
+    margin: 1rem;
+}
+
+.footer-about p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-links ul li a:hover {
+    color: white;
+}
+
+.footer-social a {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    color: #bbb;
+    text-decoration: whitesmoke;
+}
+
+.footer-social a:hover {
+    color: #ff6347; /* Same color as your buttons */
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-about, .footer-links, .footer-social {
+        margin: 1rem 0;
+    }
+}
+
+/* Standaard stijl voor de zijbalk */
+/* Stijl voor de zijbalk */
+#sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1;
+
+}
+
+#sideNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #FF4081; /* Roze hover effect */
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Toggle knop voor menu */
+.menu-toggle {
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #FF4081; /* Roze kleur voor de toggle knop */
+}
+
+.menu-toggle:hover {
+    color: #ec0b56;
+}
+
+nav {
+    font-family: 'Georgia', sans-serif;
+    font-size: 40px;
+    color: #333;
+    background-color: #fc826c;
+    line-height: 1.6;
+    height: 100%;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #f72804;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Georgia', sans-serif;
+
+}
+
+.btn:hover {
+    background-color: #f72804;
+}
+#openNavBtn {
+    font-size: 24px; /* Vergroot de tekstgrootte */
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px; /* Breedte van het vakje */
+    height: 50px; /* Hoogte van het vakje */
+    text-align: center;
+    line-height: 50px; /* Zorgt ervoor dat de tekst gecentreerd is */
+    background-color: #444; /* Achtergrondkleur van het vakje */
+    color: white; /* Kleur van de tekst */
+    border-radius: 5px; /* Ronde hoeken voor het vakje */
+    border: 2px solid #fff; /* Randkleur en -dikte van het vakje */
+}
+/* Toggle knop voor menu */
+.menu-toggle {
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #FF4081; /* Roze kleur voor de toggle knop */
+}

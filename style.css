@@ -1,0 +1,297 @@
+/* Reset browser default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* Global Styles */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', serif;
+    margin-bottom: 0.75em;
+}
+
+p {
+    margin-bottom: 1.25em;
+}
+
+/* Header */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h2 {
+    color: #007BFF;
+    margin-bottom: 1rem;
+}
+
+main p {
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Buttons */
+button, .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Forms */
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.footer-about, .footer-links, .footer-social {
+    flex: 1;
+    margin: 1rem;
+}
+
+.footer-about p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-links ul li a:hover {
+    color: white;
+}
+
+.footer-social a {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    color: #bbb;
+    text-decoration: whitesmoke;
+}
+
+.footer-social a:hover {
+    color: #ff6347; /* Same color as your buttons */
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-about, .footer-links, .footer-social {
+        margin: 1rem 0;
+    }
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    nav ul li {
+        padding: 0.5rem 0;
+    }
+}
+
+/* Stijl voor de zijbalk */
+#sideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#sideNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #FF4081; /* Roze hover effect */
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Toggle knop voor menu */
+.menu-toggle {
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #FF4081; /* Roze kleur voor de toggle knop */
+}
+
+.menu-toggle:hover {
+    color: #FF80AB;
+}
+
+nav {
+    font-family: 'Georgia', sans-serif;
+    font-size: 40px;
+    color: #333;
+    background-color: #0165cf;
+    line-height: 1.6;
+    height: 100%;
+}
+#openNavBtn {
+    font-size: 24px; /* Vergroot de tekstgrootte */
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px; /* Breedte van het vakje */
+    height: 50px; /* Hoogte van het vakje */
+    text-align: center;
+    line-height: 50px; /* Zorgt ervoor dat de tekst gecentreerd is */
+    background-color: #444; /* Achtergrondkleur van het vakje */
+    color: white; /* Kleur van de tekst */
+    border-radius: 5px; /* Ronde hoeken voor het vakje */
+    border: 2px solid #fff; /* Randkleur en -dikte van het vakje */
+}

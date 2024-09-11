@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="merch.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Fashionably Yours</h1>
+    </header>
+
+    <nav>
+        <!-- Toggle knop voor de navigatie -->
+        <span id="openNavBtn" onclick="openNav()">&#9776; menu </span>
+    </nav>
+<div id="sideNav" class="sidenav">
+    <a href="jenstermerch.html" class="navi.js" onclick="closeNav()">&times;</a>
+    <a href="index.html">home</a>
+    <a href="login.html">login</a>
+</div>
+
+    <!-- Main Content -->
+    <main>
+        <section id="home">
+            <h2>Welcome to Fashionably Yours</h2>
+            <p>Discover our latest collection of trendy and stylish clothing.</p>
+            <button class="btn">Shop Now</button>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products">
+            <h2>Our Collection</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="product 1 voorzijden.png" alt="Product 1">
+                    <h3>Classic T-Shirt</h3>
+                    <p>$25.00</p>
+                    <button onclick="window.location.href='product1.html';" class="btn login-btn">bekijk product</button>
+                </div>
+                <div class="product-item">
+                    <img src="product 2.png" alt="Product 2">
+                    <h3>Stylish Jacket</h3>
+                    <p>$60.00</p>
+                    <button onclick="window.location.href='product2.html';" class="btn login-btn">bekijk product</button>
+                </div>
+                <div class="product-item">
+                    <img src="product 1 voorzijden.png" alt="Product 1">
+                    <h3>Classic T-Shirt</h3>
+                    <p>$25.00</p>
+                    <button onclick="window.location.href='product1.html';" class="btn login-btn">bekijk product</button>
+                </div>
+                <div class="product-item">
+                    <img src="product 1 voorzijden.png" alt="Product 1">
+                    <h3>Classic T-Shirt</h3>
+                    <p>$25.00</p>
+                    <button onclick="window.location.href='product1.html';" class="btn login-btn">bekijk product</button>
+                </div>
+                <!-- Add more products similarly -->
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Fashionably Yours is a premium clothing store offering the latest in fashion for men and women.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+<!-- Footer Section -->
+<footer>
+
+    <!-- Social Media Section -->
+    <div class="footer-social">
+        <h3>Follow Us</h3>
+        <a href="https://www.youtube.com/@detweegangsterszijncool3356" target="_blank"><i class="fab fa-pinterest">Youtube</i></a>
+        <a href="https://www.instagram.com/_jensiee_/" target="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.bataven.nl/profiel/372/jens-joosten/?tab=1" target="_blank"><i class="fab fa-twitter"></i>bataven</a>
+    </div>
+</div>
+
+<div class="footer-bottom">
+    <p>&copy; 2024 Fashionably Yours. All rights reserved. | Designed with ❤</p>
+</div>
+</footer>
+
+<script src="product1java.js"></script>
+<script src="navi.js"></script>
+
+</body>
+</html>

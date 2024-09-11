@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="product1.css">
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Fashionably Yours</h1>
+        <button onclick="window.location.href='jenstermerch.html';" class="btn">terug</button>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+            <!-- Toggle knop voor de navigatie -->
+            <span id="openNavBtn" onclick="openNav()">&#9776; menu </span>
+    </nav>
+    <div id="sideNav" class="sidenav">
+        <a href="product2.html" class="navi.js" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="jenstermerch.html">Merch</a>
+    </div>
+
+    <!-- Main Product Section -->
+    <main>
+        <section class="product-view">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img src="product 2.png" alt="Product Image 1" class="carousel-image active">
+                    <img src="product2a.png" alt="Product Image 2" class="carousel-image">
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button class="prev-btn">&#10094;</button>
+                <button class="next-btn">&#10095;</button>
+            </div>
+
+            <div class="product-details">
+                <h2>Stylish Jacket</h2>
+                <p>$60.00</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum, velit ut malesuada euismod, orci enim sagittis nisl, sit amet dictum nulla justo vitae elit.</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+<!-- Footer Section -->
+<footer>
+
+        <!-- Social Media Section -->
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <a href="https://www.youtube.com/@detweegangsterszijncool3356" target="_blank"><i class="fab fa-pinterest">Youtube</i></a>
+            <a href="https://www.instagram.com/_jensiee_/" target="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://www.bataven.nl/profiel/372/jens-joosten/?tab=1" target="_blank"><i class="fab fa-twitter"></i>bataven</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Fashionably Yours. All rights reserved. | Designed with ❤</p>
+    </div>
+</footer>
+
+
+    <script src="product1java.js"></script>
+    <script src="navi.js"></script>
+
+</body>
+</html>
